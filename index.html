@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/weatherStyle.css">
+
+  </head>
+  <body onload="init()">
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-8">
+
+          <div class="row">
+           <h1 class="text-center">Hello, weurld!</h1>
+
+           <div class="input-group mb-3">
+            <input id="input_city" type="text" class="form-control search-bar-city" value="Bayonne" placeholder="Bayonne, Biarritz, Socoa..." aria-label="Je veux savoir où tu habites" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-success search-bar-city" onclick="LaunchNukeRocket()" type="button">Search !</button>
+              </div>
+            </div>
+
+            <div class="label-result" id="weatherInfoContainer">
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="row" id="weatherClothesCountainer">
+
+                <div class="col-md-6 div-clothes-logo" id="logo_raincoat">
+                  <img class="clothes-logo" src="img/raincoat.png" alt="Raincoat Logo">
+                  <div class="text-center">
+                    Rain coat
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_furcoat">
+                  <img class="clothes-logo" src="img/furcoat.png" alt="Furcoat Logo">
+                  <div class="text-center">
+                    Fur coat
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_jacket">
+                  <img class="clothes-logo" src="img/jacket.png" alt="Scarf Logo">
+                  <div class="text-center">
+                    Jacket
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_tshirt">
+                  <img class="clothes-logo" src="img/tshirt.png" alt="T-Shirt Logo">
+                  <div class="text-center">
+                    T-Shirt
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_pants">
+                  <img class="clothes-logo" src="img/pants.png" alt="Pants Logo">
+                  <div class="text-center">
+                    Pants
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_short">
+                  <img class="clothes-logo" src="img/short.png" alt="Short Logo">
+                  <div class="text-center">
+                    Shorts
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_umbrella">
+                  <img class="clothes-logo" src="img/umbrella.png" alt="Umbrella Logo">
+                  <div class="text-center">
+                    Umbrella
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_sunglasses">
+                  <img class="clothes-logo" src="img/sunglasses.png" alt="Sunglasses Logo">
+                  <div class="text-center">
+                    Sunglasses
+                  </div>
+                </div>
+                <div class="col-md-6 div-clothes-logo" id="logo_scarf">
+                  <img class="clothes-logo" src="img/scarf.png" alt="Scarf Logo">
+                  <div class="text-center">
+                    Scarf
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="js/weatherFunctions.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
